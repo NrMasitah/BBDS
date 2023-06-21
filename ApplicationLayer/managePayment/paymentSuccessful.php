@@ -22,16 +22,62 @@ $notification1->updateCart();
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <script src="https://use.fontawesome.com/3cc6771f24.js"></script>
         <style>
-            body {
+            body 
+            {
                 text-align: center;
                 margin-top: 20%;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                margin: 0;
+                display: flex;
+                background-image: url("image/logo.jpg");
             }
+            p.solid 
+            {   
+                border-style: solid;
+            }
+            div 
+            {
+                background-color: lightgrey;
+                width: 300px;
+                border: 15px solid green;
+                padding: 50px;
+                margin: 20px;
+                
+            }
+            .border-box {
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+        }
+ 
         </style>
     </head>
+
+
 <body>
-    <h1>Payment Success!</h1>
+<div class= "border-box">    
+<h1>Payment Success!</h1>
+    <script>
+    function showPopup() {
+      alert("Payment successful! Thank you for your purchase.");
+    }
+  </script>
     <br><br><br>
     <h3>Click OK<h3>
-    <button class="btn btn-primary"><a href="../../ApplicationLayer/manageOrder/customerHomePage.php?custID=<?=$_SESSION['custID']?>" style="color: white;">OK</a></button>
+    <!--<button class="btn btn-primary"><a href="../../ApplicationLayer/manageOrder/customerHomePage.php?custID=<?=$_SESSION['custID']?>" style="color: white;">OK</a></button> -->
+<!-- Payment form -->
+<form action="customerHomePage.php" method="post">
+    <!-- Form fields and submit button go here -->
+    <!-- After successful payment, call the showPopup() function -->
+    <input type="submit" value="To HomePage" style="color:darkgreen;" onclick="showPopup()">
+  </form>
+</div>
 </body>
+
 </html>
+
+
+
+
