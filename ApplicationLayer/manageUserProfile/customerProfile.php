@@ -13,6 +13,8 @@
     if(isset($_POST['delete'])){
         $user->deleteCust($custID);
     }
+
+    //add pop-up
 ?>
 <!DOCTYPE html>
 <html>
