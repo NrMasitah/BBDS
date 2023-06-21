@@ -22,7 +22,7 @@
         <script src="https://use.fontawesome.com/3cc6771f24.js"></script>
         <style>
             td {
-                text-align: center; nnn
+                text-align: center;
             }
 
             .logout {
