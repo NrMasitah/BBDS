@@ -23,7 +23,7 @@
         <style>
             td {
                 text-align: center;
-            }
+            }bhdgfd<?php
 
             .logout {
             position: fixed;
