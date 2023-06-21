@@ -87,6 +87,7 @@ if(isset($_POST['login'])){
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-user" aria-hidden="true" style="font-size: larger;"></i></span>
                         <input type="text" class="form-control form-control input-lg" name="custusername" placeholder="Username" required>
+                        <!-- Putting the required attributes for login -->
                     </div>
                     <br>
                     <div class="input-group">         
